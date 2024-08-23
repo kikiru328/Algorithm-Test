@@ -1,6 +1,5 @@
 from collections import deque
-
-for t in int(input()):  # test 수
+for _ in range(int(input())):  # test 수
     docs, f = map(int, input().split())  # 도큐먼트와 찾을 것
     imp_ = deque(map(int, input().split()))
     imp = deque([(i, inx) for inx, i in enumerate(imp_)])  # 문자 중요도와 indexing.
